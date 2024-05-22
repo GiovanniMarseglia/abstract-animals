@@ -2,7 +2,7 @@ package org.learning.animali;
 
 public class Main {
     public static void main(String[] args) {
-        Animal[] animali={new Passerotto(),new Dog(),new Delfino(),new Passerotto()};
+        Animal[] animali={new Passerotto(),new Dog(),new Delfino(),new Aquila()};
         Passerotto passerotto = new Passerotto();
         passerotto.verso();
         passerotto.mangia("mais");
@@ -22,12 +22,19 @@ public class Main {
     public static void check(Animal[] animale){
         for (int i = 0; i < animale.length; i++) {
             if (animale[i] instanceof Fly){
-                ((Fly)animale[i]).vola();
+                faiVolare(animale[i]);
             } else if (animale[i] instanceof Swim) {
-                ((Swim)animale[i]).nuota();
+                faiNuotare(animale[i]);
             }
         }
 
     }
 
+    public static void faiVolare(Object vola){
+        ((Fly)vola).vola();
+    }
+
+    public static void faiNuotare(Object swim){
+        ((Swim)swim).nuota();
+    }
 }
