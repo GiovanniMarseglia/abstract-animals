@@ -1,4 +1,4 @@
-package org.learning;
+package org.learning.animali;
 
 public abstract class Animal {
     void dormi(){

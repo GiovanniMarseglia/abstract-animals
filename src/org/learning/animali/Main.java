@@ -1,4 +1,4 @@
-package org.learning;
+package org.learning.animali;
 
 public class Main {
     public static void main(String[] args) {

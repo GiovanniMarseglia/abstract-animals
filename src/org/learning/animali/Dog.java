@@ -1,14 +1,15 @@
-package org.learning;
+package org.learning.animali;
 
-public class Delfino extends Animal implements Swim{
+public class Dog extends Animal implements Swim{
+
     @Override
     void verso() {
-        System.out.println("bbbbb");
+        System.out.println("Bau bau");
     }
 
     @Override
     void mangia(String food) {
-        System.out.println("Mangio prevalentemente " + food);
+        System.out.println("Mangio principalmente " + food);
     }
 
     @Override

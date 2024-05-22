@@ -1,9 +1,9 @@
-package org.learning;
+package org.learning.animali;
 
-public class Aquila extends Animal implements Fly{
+public class Passerotto extends Animal implements Fly{
     @Override
     void verso() {
-        System.out.println("Aaaa");
+        System.out.println("Cip cip");
     }
 
     @Override
