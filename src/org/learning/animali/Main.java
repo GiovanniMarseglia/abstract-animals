@@ -22,19 +22,19 @@ public class Main {
     public static void check(Animal[] animale){
         for (int i = 0; i < animale.length; i++) {
             if (animale[i] instanceof Fly){
-                faiVolare(animale[i]);
+                faiVolare((Fly)animale[i]);
             } else if (animale[i] instanceof Swim) {
-                faiNuotare(animale[i]);
+                faiNuotare((Swim)animale[i]);
             }
         }
 
     }
 
-    public static void faiVolare(Object vola){
-        ((Fly)vola).vola();
+    public static void faiVolare(Fly fly){
+        fly.vola();
     }
 
-    public static void faiNuotare(Object swim){
-        ((Swim)swim).nuota();
+    public static void faiNuotare(Swim swim){
+        swim.nuota();
     }
 }
