@@ -1,7 +1,7 @@
 package org.learning.dvdorps;
 
 public final class Creator {
-    public Object create (String type){
+    public Hardware create (String type){
         if(type.equals("playstation")){
             return new Playstation();
         } else if (type.equals("dvd")) {
